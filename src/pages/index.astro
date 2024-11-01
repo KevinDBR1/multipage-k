@@ -1,10 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="Welcome to Astro.">
-	add
+	<div class="my-class">
+		add
+	</div>
+	<span class="font-myfont">Hola mundo con mi font elegido</span>
+	<div class="flex">
+		<Icon name="mdi:progress-upload" size = "56" class = "text-blue-600" />
+	    <Icon name="svg-spinners:bars-rotate-fade" size = "56" class = "text-blue-600" />
+		<Icon name="svg-spinners:blocks-wave" size = "56" class = "text-blue-600" />
+	</div>
+
 </Layout>
+
+<style>
+	
+	.my-class {
+		@apply bg-red-500 text-white text-2xl 
+	}
+
+</style>
 
 
