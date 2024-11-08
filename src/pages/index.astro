@@ -12,6 +12,10 @@ import { Icon } from 'astro-icon/components';
 		<Icon name="mdi:progress-upload" size = "56" class = "text-blue-600" />
 	    <Icon name="svg-spinners:bars-rotate-fade" size = "56" class = "text-blue-600" />
 		<Icon name="svg-spinners:blocks-wave" size = "56" class = "text-blue-600" />
+
+		<div id="btn" data-role="admin" class="bg-red-400 text-white">
+			pinchar
+		</div>
 	</div>
 
 </Layout>
@@ -23,5 +27,11 @@ import { Icon } from 'astro-icon/components';
 	}
 
 </style>
+<script>
+	const btn = document.getElementById("btn")
+	btn.addEventListener('click', (e) => {
+		console.log('ayyy!', e.target.dataset.role)
+	})
+</script>
 
 
