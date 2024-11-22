@@ -1,7 +1,11 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../layouts/Layout.astro"
+
+import MyComponent from "../components/vue/MyComponent.vue"
 ---
 
 <Layout title="Aqui te contamos quienes somos">
     esta pagina es sobre quienes somos
+
+    <MyComponent client:load/>
 </Layout>
